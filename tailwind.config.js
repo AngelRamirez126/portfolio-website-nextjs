@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppinLight: "PoppinLight",
-        poppinBold: "PoppinBold",
-        poppinReg: "PoppinReg",
+        latoLight: "LatoLight",
+        latoBold: "LatoBold",
+        latoReg: "LatoReg",
       },
     },
   },
