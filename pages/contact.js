@@ -1,5 +1,6 @@
-import Head from 'next/head'
-import { motion as m } from 'framer-motion'
+import Head from 'next/head';
+import { motion as m } from 'framer-motion';
+import { container, item } from '../animations';
 
 export default function Contact(){
     return(
@@ -21,11 +22,23 @@ export default function Contact(){
                     <h4>Find me:</h4>
                 </div>
                 <div className='lg:text-6xl text-2xl underline'>
-                    <ul>
-                        <li className='pb-2'>Github</li>
-                        <li className='pb-2'>Dribble</li>
-                        <li className='pb-2'>LinkedIn</li>
-                    </ul>
+                    <m.ul variants={container} initial="hidden" animate="show">
+                      <div className='overflow-hidden'>
+                        <m.li variants={item} className='pb-2'>
+                            Github
+                        </m.li>
+                      </div>
+                      <div className='overflow-hidden'>
+                        <m.li variants={item} className='pb-2'>
+                            Dribble
+                        </m.li>
+                      </div>
+                      <div className='overflow-hidden'>
+                        <m.li variants={item} className='pb-2'>
+                            LinkedIn
+                        </m.li>
+                      </div>
+                    </m.ul>
                 </div>
             </div>
         </m.main>
