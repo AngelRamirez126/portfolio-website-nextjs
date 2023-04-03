@@ -1,9 +1,11 @@
 import Head from 'next/head'
-import { motion as m } from 'framer-motion'
+import { motion as m } from 'framer-motion';
+import {useState} from 'react';
 
 export default function Experience(){
+    const [isOpen, setIsOpen] = useState(false);
     return(
-        <m.main 
+    <m.main 
         initial={{ y: "100%" }}
         animate={{ y: "0%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
@@ -16,6 +18,23 @@ export default function Experience(){
                     Experiences
                 </m.h1>
             </div>
-        </m.main>
+            
+            <div layout className='min-h-100vh flex justify-center items-center overflow-hidden'>
+                <m.div layout 
+                    onClick={ () => setIsOpen(!isOpen)} 
+                    className='bg-orange-100 py-12 px-20 rounded-md'>
+                    <img src='assets' alt='placeholder'/>
+                    
+                    {isOpen && (
+                <m.div>
+                    <p className='pt-8 leading-normal'>Laborum excepteur id elit ipsum exercitation excepteur enim elit officia id deserunt tempor commodo.</p>
+                    <p>loerm</p>
+                </m.div>
+                )}
+                </m.div>
+            </div>
+    </m.main>
+
+    
     )
 }

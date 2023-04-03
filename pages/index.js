@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { motion as m } from 'framer-motion'
+import { container, item } from '../animations';
 
 export default function Home() {
   return (
@@ -17,23 +18,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className='my-96 p-1'>
-          <h1 className='text-6xl text-center lg:text-right lg:text 9xl'>
+        <div className='my-96 p-1 overflow-hidden'>
+          <m.h1 animate={{ y: 0 }} 
+                initial={{ y: "100%" }} transition={{ delay: 0.5, duration: 0.5 }}
+                className='text-6xl text-center lg:text-right lg:text 9xl'>
             Angel Ramirez
-          </h1>
+          </m.h1>
+          <div className='h-50 w-50'>
+            
+          </div>
         </div>
         
         <div className='flex justify-between'>
           <div>
-          <h2>Front-End</h2>
           <h2>Developer</h2>
           <h2>Portfolio</h2>
           </div>
-          <div>
-            <h3>Dynamic and interactive content</h3>
-            <h3>Professional grade & quality driven work</h3>
-            <h3>UI & UX meeting industry standard</h3>
-          </div>
+          <m.div variants={container} initial="hidden" animate="show">
+            <m.h3 varients={item} >Dynamic and interactive content</m.h3>
+            <m.h3 varients={item}>Professional grade & quality driven work</m.h3>
+            <m.h3 varients={item}>UI & UX meeting industry standard</m.h3>
+          </m.div>
         </div>
       </main>
     </m.div>

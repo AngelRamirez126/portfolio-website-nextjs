@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import { motion as m } from 'framer-motion';
 import { container, item } from '../animations';
+import {BsLinkedin} from 'react-icons/bs'
+import {BsGithub} from 'react-icons/bs'
+import {BsDribbble} from 'react-icons/bs'
 
 export default function Contact(){
     return(
@@ -17,25 +20,40 @@ export default function Contact(){
                     Let's Talk
                 </m.h1>
             </div>
-            <div className='flex gap-40'>
+            <div className='flex gap-20'>
                 <div className='lg:text-2xl text-base'>
                     <h4>Find me:</h4>
                 </div>
-                <div className='lg:text-6xl text-2xl underline'>
+                <div className='lg:text-6xl text-2xl'>
+                    
                     <m.ul variants={container} initial="hidden" animate="show">
+                      
                       <div className='overflow-hidden'>
-                        <m.li variants={item} className='pb-2'>
-                            Github
+                        <m.li variants={item}
+                            className='pb-5 hover:text-orange-100'>
+                            <a href="https://www.linkedin.com/in/angel-ramirez-54b8851b0/"
+                               target ="__blank">
+                                <BsLinkedin/>
+                            </a>
+                        </m.li>
+                      </div>
+                      
+                      <div className='overflow-hidden wd-auto'>
+                        <m.li variants={item} 
+                            className='pb-5 hover:text-orange-100'>
+                            <a href="https://dribbble.com/Angel_Ramirez?onboarding=true" 
+                                target ="_blank">
+                                    <BsDribbble/>
+                            </a>
                         </m.li>
                       </div>
                       <div className='overflow-hidden'>
-                        <m.li variants={item} className='pb-2'>
-                            Dribble
-                        </m.li>
-                      </div>
-                      <div className='overflow-hidden'>
-                        <m.li variants={item} className='pb-2'>
-                            LinkedIn
+                        <m.li variants={item} 
+                            className='pb-5 hover:text-orange-100'>
+                            <a href="https://github.com/AngelRamirez126" 
+                                target ="_blank">
+                                    <BsGithub/>
+                            </a>
                         </m.li>
                       </div>
                     </m.ul>
