@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import { motion as m } from 'framer-motion'
+import { Container } from 'postcss'
+import '../public/Assets/download.png'
 
 export default function Projects(){
     return(
@@ -15,6 +17,19 @@ export default function Projects(){
                     className='text-6xl text-center lg:text-right lg:text 9xl'>
                     Projects
                 </m.h1>
+                </div>
+
+                <div className='container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'>
+                    <section>
+                        <h2>My Work</h2>
+                        <p>Proident proident commodo veniam sint non enim quis magna minim. Exercitation Lorem aute enim sit. Consequat consectetur irure anim pariatur consequat nisi incididunt ea ipsum proident. Esse exercitation velit veniam deserunt labore dolore ad voluptate minim incididunt. Ea occaecat dolor cillum anim culpa.</p>
+
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6'>
+                            <ul>
+                                
+                            </ul>
+                        </div>
+                    </section>
                 </div>
         </m.main>
     )

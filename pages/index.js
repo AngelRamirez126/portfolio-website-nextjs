@@ -24,21 +24,42 @@ export default function Home() {
                 className='text-6xl text-center lg:text-right lg:text 9xl'>
             Angel Ramirez
           </m.h1>
-          <div className='h-50 w-50'>
-            
-          </div>
         </div>
-        
+    
         <div className='flex justify-between'>
-          <div>
-          <h2>Developer</h2>
-          <h2>Portfolio</h2>
+          <div className='overflow-hidden'>
+          
+          <m.h2 animate={{ y: 0 }} 
+                initial={{ y: "300%" }} 
+                transition={{ delay: 0.5, duration: 0.5 }}>
+                  Developer
+          </m.h2>
+          
+          <m.h2 animate={{ y: 0 }} 
+                initial={{ y: "300%" }} 
+                transition={{ delay: 0.8, duration: 0.5 }}>
+                  Portfolio
+            </m.h2>
           </div>
-          <m.div variants={container} initial="hidden" animate="show">
-            <m.h3 varients={item} >Dynamic and interactive content</m.h3>
-            <m.h3 varients={item}>Professional grade & quality driven work</m.h3>
-            <m.h3 varients={item}>UI & UX meeting industry standard</m.h3>
-          </m.div>
+          
+          <div className='overflow-hidden'>
+            <m.h3 animate={{ y: 0 }} 
+                initial={{ y: "300%" }} 
+                transition={{ delay: 1, duration: 0.5 }}>
+                  Dynamic and interactive content
+            </m.h3>
+            
+            <m.h3 animate={{ y: 0 }} 
+                initial={{ y: "300%" }} 
+                transition={{ delay: 1.2, duration: 0.5 }}>
+                  Professional grade & quality driven work
+            </m.h3>
+            <m.h3 animate={{ y: 0 }} 
+                initial={{ y: "300%" }} 
+                transition={{ delay: 1.5, duration: 0.5 }}>
+                  UI & UX meeting industry standard
+            </m.h3>
+          </div>
         </div>
       </main>
     </m.div>

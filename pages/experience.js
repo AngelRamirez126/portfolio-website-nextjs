@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { motion as m } from 'framer-motion';
 import {useState} from 'react';
+import {AiFillCheckCircle} from 'react-icons/ai'
 
 export default function Experience(){
     const [isOpen, setIsOpen] = useState(false);
@@ -18,23 +19,44 @@ export default function Experience(){
                     Experiences
                 </m.h1>
             </div>
-            
-            <div layout className='min-h-100vh flex justify-center items-center overflow-hidden'>
-                <m.div layout 
-                    onClick={ () => setIsOpen(!isOpen)} 
-                    className='bg-orange-100 py-12 px-20 rounded-md'>
-                    <img src='assets' alt='placeholder'/>
-                    
-                    {isOpen && (
-                <m.div>
-                    <p className='pt-8 leading-normal'>Laborum excepteur id elit ipsum exercitation excepteur enim elit officia id deserunt tempor commodo.</p>
-                    <p>loerm</p>
-                </m.div>
-                )}
-                </m.div>
-            </div>
-    </m.main>
 
-    
+            <m.div initial={{ y: "100%" }}
+                    animate={{ y: "-45%" }}
+                    transition={{ delay: 0.8, duration: 0.75, ease: "easeOut" }}
+                    class="bg-white rounded-md">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 rounded-">
+    <h2 class="text-4xl font-extrabold text-gray-900 text-center mb-8">Programming Experience</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
+      <m.div whileHover={{ scale: 1.1 }} class="bg-gray-100 px-8 py-6 rounded-lg overflow-hidden">
+        <m.h3 whileHover={{ scale: 1.05 }} class="text-2xl font-bold mb-2">Java</m.h3>
+        <m.p whileHover={{ backgroundColor: "#fcd34d" }} class="text-gray-600 leading-relaxed mb-4">Experience using Java to create desktop applications and web applications.</m.p>
+      </m.div>
+      <m.div whileHover={{ scale: 1.1 }} class="bg-gray-100 px-8 py-6 rounded-lg overflow-hidden">
+        <m.h3 whileHover={{ scale: 1.05 }} class="text-2xl font-bold mb-2">Python</m.h3>
+        <m.p whileHover={{ backgroundColor: "#fcd34d" }} class="text-gray-600 leading-relaxed mb-4">Experience using Python for data analysis and machine learning projects.</m.p>
+      </m.div>
+      <m.div whileHover={{ scale: 1.1 }} class="bg-gray-100 px-8 py-6 rounded-lg overflow-hidden">
+        <m.h3 whileHover={{ scale: 1.05 }} class="text-2xl font-bold mb-2">C++</m.h3>
+        <m.p whileHover={{ backgroundColor: "#fcd34d" }} class="text-gray-600 leading-relaxed mb-4">Experience using C++ for game development and system programming.</m.p>
+      </m.div>
+      <m.div whileHover={{ scale: 1.1 }} class="bg-gray-100 px-8 py-6 rounded-lg overflow-hidden">
+        <m.h3 whileHover={{ scale: 1.05 }} class="text-2xl font-bold mb-2">JavaScript</m.h3>
+        <m.p whileHover={{ backgroundColor: "#fcd34d" }} class="text-gray-600 leading-relaxed mb-4">Experience using JavaScript for web development and building interactive user interfaces.</m.p>
+      </m.div>
+      <m.div whileHover={{ scale: 1.1 }} class="bg-gray-100 px-8 py-6 rounded-lg overflow-hidden">
+        <m.h3 whileHover={{ scale: 1.05 }} class="text-2xl font-bold mb-2">HTML/CSS</m.h3>
+        <m.p whileHover={{ backgroundColor: "#fcd34d" }} class="text-gray-600 leading-relaxed mb-4">Experience using HTML and CSS for building responsive and user-friendly websites.</m.p>
+      </m.div>
+    </div>
+  </div>
+</m.div>
+
+
+
+
+
+            
+
+    </m.main>   
     )
 }
