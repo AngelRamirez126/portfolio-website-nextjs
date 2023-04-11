@@ -1,10 +1,12 @@
 import Link from 'next/link';
 import { motion as m } from 'framer-motion';
+import { NavLink, useLocation } from 'react-router-dom';
+
 
 function Navbar() {
-    return (
-        <nav className='textx-2xl front-medium z-20 relative'>
-            <ul className='flex gap-12 pl-50'>
+  return (
+        <nav className='sm:text-sm lg:text-2xl front-medium z-20 relative'>
+            <ul className=' flex gap-16 pl-50'>
                 <m.li animate={{ y: "0%" }} 
                       initial={{ y: "-200%" }} 
                       whileHover={{scale: 2}}>

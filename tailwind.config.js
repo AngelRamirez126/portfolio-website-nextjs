@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
+  purge: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -11,6 +11,7 @@ module.exports = {
         latoLight: "LatoLight",
         latoBold: "LatoBold",
         latoReg: "LatoReg",
+        clip: ['clip', 'sans-serif'],
       },
       height: {
         "10v": "10vh",
