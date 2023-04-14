@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import { motion as m } from 'framer-motion';
 import {useState} from 'react'
+import {SiJavascript, SiPython, SiHtml5, SiTailwindcss} from 'react-icons/si'
+import {TbHexagonLetterC} from 'react-icons/tb'
 
 export default function Experience(){
-    const [isOpen, setIsOpen] = useState(false);
     return(
     <m.main 
         initial={{ y: "100%" }}
@@ -19,16 +20,17 @@ export default function Experience(){
                 </m.h1>
             </div>
 
-            <m.div  class="bg-white rounded-md" >
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 rounded-md">
+            <m.div
+            class="bg- rounded-md" >
+  <m.div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 rounded-md">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
       
       <m.div whileHover={{ scale: 1.1 }} 
              class="bg-gray-100 px-8 py-6 rounded-lg overflow-hidden">
         
         <m.h3 whileHover={{ scale: 1.05 }} 
-              class="text-2xl font-bold mb-2">
-                C
+              class="text-4xl font-bold mb-2">
+                <TbHexagonLetterC/>
         </m.h3>
         
         <m.p whileHover={{ backgroundColor: "#fcd34d" }} 
@@ -41,8 +43,8 @@ export default function Experience(){
              class="bg-gray-100 px-8 py-6 rounded-lg overflow-hidden">
         
         <m.h3 whileHover={{ scale: 1.05 }} 
-              class="text-2xl font-bold mb-2">
-                Python
+              class="text-4xl font-bold mb-2">
+                <SiPython/>
         </m.h3>
         
         <m.p whileHover={{ backgroundColor: "#fcd34d" }} 
@@ -55,11 +57,13 @@ export default function Experience(){
              class="bg-gray-100 px-8 py-6 rounded-lg overflow-hidden">
         
         <m.h3 whileHover={{ scale: 1.05 }} 
-              class="text-2xl font-bold mb-2">C++</m.h3>
+              class="text-4xl font-bold mb-2">
+                <SiHtml5/>
+              </m.h3>
         
         <m.p whileHover={{ backgroundColor: "#fcd34d" }} 
              class="text-gray-600 leading-relaxed mb-4">
-                Experience using C++ for game development and system programming.
+                Experience using HTML for building website layouts.
         </m.p>
       </m.div>
       
@@ -67,8 +71,8 @@ export default function Experience(){
              class="bg-gray-100 px-8 py-6 rounded-lg overflow-hidden">
         
         <m.h3 whileHover={{ scale: 1.05 }} 
-              class="text-2xl font-bold mb-2">
-                JavaScript
+              class="text-4xl font-bold mb-2">
+                <SiJavascript />
         </m.h3>
         
         <m.p whileHover={{ backgroundColor: "#fcd34d" }} 
@@ -81,13 +85,13 @@ export default function Experience(){
              class="bg-gray-100 px-8 py-6 rounded-lg overflow-hidden">
         
         <m.h3 whileHover={{ scale: 1.05 }} 
-              class="text-2xl font-bold mb-2">
-                HTML/CSS & Tailwind
+              class="text-4xl font-bold mb-2">
+              <SiTailwindcss/>
         </m.h3>
         
         <m.p whileHover={{ backgroundColor: "#fcd34d" }} 
              class="text-gray-600 leading-relaxed mb-4">
-                Experience using HTML and CSS for building responsive and user-friendly websites.
+                Experience using CSS and CSS Tailwind for building responsive and user-friendly website designs.
         </m.p>
       </m.div>
       
@@ -99,11 +103,11 @@ export default function Experience(){
         </m.h3>
         <m.p whileHover={{ backgroundColor: "#fcd34d" }} 
              class="text-gray-600 leading-relaxed mb-4">
-            Experience using HTML and CSS for building responsive and user-friendly websites.
+            Experience using UX/UI design concepts to create beautiful webagesa
         </m.p>
       </m.div>
     </div>
-  </div>
+  </m.div>
 </m.div>
 
 
