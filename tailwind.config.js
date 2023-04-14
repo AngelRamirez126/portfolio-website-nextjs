@@ -12,6 +12,9 @@ module.exports = {
         latoBold: "LatoBold",
         latoReg: "LatoReg",
         clip: ['clip', 'sans-serif'],
+        animation: {
+          'flicker': "flicker 1.5s infinite alternate"
+        }
       },
       height: {
         "10v": "10vh",

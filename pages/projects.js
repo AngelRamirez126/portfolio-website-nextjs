@@ -13,14 +13,15 @@ export default function Projects(){
         exit={{ opacity: 1 }}
         className="text-grey-900 absolute top-0 left-0 w-full h-full bg-black">  
             <div>          
-            <div className='mt-60 mp-20 sm:pb-26 overflow-hidden text-gradient'>
-                <m.h1 animate={{ y: 0 }} 
-                    initial={{ y: "100%" }} transition={{ delay: 0.5, duration: 0.5 }}
-                    className='font-clip text-9xl text-pink-600 text-center p-2 '>
+            <div className='mt-60 mp-20 sm:pb-26 text-gradient pb-12'>
+                <h1 
+                    className='title font-clip text-9xl text-pink-600 text-center p-2'>
                     Projects
-                </m.h1>
+                </h1>
             </div>
             </div>
+            
+            
             
             <section>
             <m.div class="container mx-auto px-4 py-16">
@@ -57,7 +58,7 @@ export default function Projects(){
                 
                 <div class="p-6">
                    <h3 class="font-semibold text-lg mb-2 text-orange-50">
-                        Project 1
+                        Project 2
                    </h3>
                       <p class="text-gray-700 leading-relaxed mb-3">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ante in ante, eget lacinia turpis.
@@ -78,7 +79,7 @@ export default function Projects(){
                 
                 <div class="p-6">
                    <h3 class="font-semibold text-lg mb-2 text-orange-50">
-                        Project 1
+                        Project 3
                    </h3>
                       <p class="text-gray-700 leading-relaxed mb-3">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ante in ante, eget lacinia turpis.
